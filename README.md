@@ -149,3 +149,5 @@ app.use((err,req,res,next) => {
    - Attach the ZIP file (`StudentID_COMP3123-exec05.zip`) along with your submission, if required.
 
 Let me know if you need any further help!
+
+*** All Postman test screenshots are available in the `POSTMAN_screenshots` folder ***

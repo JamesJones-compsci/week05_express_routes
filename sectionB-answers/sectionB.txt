@@ -1,0 +1,27 @@
+#### Section B: Short Answer Questions
+
+**6. Explain the Purpose of `express.Router()` in the Code Above.**
+
+- Why is `express.Router()` used in Express.js applications, and how does it benefit the code structure?
+
+express.Router() is a mini instance of the Express router that allows you to modularize your route definitions.
+By using Router(), you can separate different parts of your API (like /students, /movies, /notes) into their own files. 
+This improves code organization, readability, and maintainability, as each module handles its own routes and middleware 
+independently, which can then be imported into the main index.js file.
+
+**7. Error Handling in Express.js**
+
+- How would you implement error handling in the Express routes to ensure that any issues (such as file not found or server errors) are appropriately handled? Provide an example.
+
+In Express, error handling ensures that any runtime issues, like missing files, invalid JSON, or server errors, 
+do not crash the application. Error-handling middleware is defined with four parameters: (err, req, res, next).
+
+#### Section C: Bonus
+
+**7. Dynamic Port Binding in Express.js**
+
+- Explain how the `app.listen(process.env.port || 8081)` line works and why it's useful in production environments.
+
+Using app.listen(process.env.PORT || 8081) allows your application to run on a port defined by the environment 
+(like in production servers or cloud platforms) while providing a default port (8081 in this example) for local development. 
+This makes the app flexible and compatible with hosting services where ports are dynamically assigned.
