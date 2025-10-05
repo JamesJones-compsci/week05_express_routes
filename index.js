@@ -75,7 +75,7 @@ app.get('/logout/:username', (req, res) => {
 });
 
 // ==========================================================
-// Extra root + error routes you had before
+// Extra root and error routes 
 // ==========================================================
 app.get('/', (req, res) => {
     res.send('<h1>Hello from Express</h1>');
